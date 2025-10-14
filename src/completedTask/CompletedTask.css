@@ -1,0 +1,71 @@
+/* Container holding all completed tasks */
+.completed-task-container {
+  display: flex !important;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 1rem auto;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Individual completed task card */
+.completed-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2f; /* dark card background */
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.completed-task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Task text container */
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.taskname {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.taskdetails {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+/* Delete button container */
+.deleted {
+    display: flex;
+    align-items: center;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #ff1f3d;
+    transform: scale(1.05);
+}

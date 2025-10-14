@@ -1,0 +1,154 @@
+/* 🌌 Outer Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #3b3b98);
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+/* 💎 Glassmorphic Signup Box */
+.signup {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 370px;
+  color: #fff;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* 🧠 Heading */
+.signup h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* ✨ Input Fields */
+.signup input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin: 0.7rem 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.signup input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signup input:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* 🔘 Button */
+.signup button {
+  width: 100%;
+  margin-top: 1.2rem;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup button:hover {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  transform: translateY(-2px);
+}
+
+/* ⚠️ Error Message */
+.signup .error {
+  color: #ff6b6b;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* 📄 Paragraph & Link */
+.signup p {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.signup a {
+  color: #00f2fe;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* ✨ Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .signup {
+    width: 90%;
+    padding: 2.5rem 2rem;
+  }
+
+  .signup h1 {
+    font-size: 1.6rem;
+  }
+
+  .signup input {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .signup button {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+  }
+
+  .signup h1 {
+    font-size: 1.4rem;
+  }
+
+  .signup input,
+  .signup button {
+    font-size: 0.9rem;
+  }
+
+  .signup a {
+    font-size: 0.9rem;
+  }
+}

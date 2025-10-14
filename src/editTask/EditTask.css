@@ -1,0 +1,86 @@
+/* 🌆 Main Edit Task Container */
+.edit-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+  background: linear-gradient(135deg, #232526, #414345);
+  padding: 2rem;
+}
+
+/* 🧾 Form Styling */
+.edit-task-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 420px;
+  backdrop-filter: blur(10px);
+}
+
+/* ✍️ Input Fields */
+.edit-task-container input[type="text"] {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.edit-task-container input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.edit-task-container input[type="text"]:focus {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.02);
+}
+
+/* 🎯 Buttons */
+.edit-task-container button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-task-container button[type='submit'] {
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+  color: #fff;
+}
+
+.edit-task-container button[type='submit']:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.edit-task-container button[type='button'] {
+  background: #444;
+  color: #fff;
+}
+
+.edit-task-container button[type='button']:hover {
+  background: #666;
+}
+
+/* 🌙 Responsive */
+@media (max-width: 480px) {
+  .edit-task-container form {
+    padding: 1.5rem;
+  }
+
+  .edit-task-container input,
+  .edit-task-container button {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,144 @@
+/* Main containers */
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  padding: 2rem;
+}
+
+/* Form wrapper */
+.containers form {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Title */
+.containers h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+ /*  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+/* Labels */
+.containers label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: black;
+  font-weight: 400;
+  gap: 0.4rem;
+}
+
+/* Inputs */
+.containers input[type='email'],
+.containers input[type='text'],
+.containers input[type='password'] {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #fff; /* your desired color */
+  opacity: 1;  /* ensures full color visibility in some browsers */
+}
+
+
+/* Input focus glow */
+.containers input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.5);
+}
+
+/* Checkbox row */
+.password-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #d9d9d9;
+  margin-top: 0.5rem;
+}
+
+/* Nested password fields */
+.change-password-template {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Buttons */
+.containers button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary button */
+.containers button[type='submit'] {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(37, 117, 252, 0.4);
+}
+
+.containers button[type='submit']:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 117, 252, 0.6);
+}
+
+/* Back button */
+.containers button[type='button'] {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.containers button[type='button']:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .containers form {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .containers h3 {
+    font-size: 1.3rem;
+  }
+
+  .containers button {
+    font-size: 0.9rem;
+  }
+}

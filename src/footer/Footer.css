@@ -1,0 +1,65 @@
+/* Footer container */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  background: rgba(31, 28, 44, 0.7); /* Semi-transparent for glass effect */
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+
+}
+
+/* Footer tabs/buttons */
+.footer .tab {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  user-select: none;
+  text-align: center;
+  min-width: 80px;
+}
+
+/* Hover effect for tabs */
+.footer .tab:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Active tab state */
+.footer .tab.active {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(37, 117, 252, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer {
+    height: 50px;
+    gap: 1rem;
+  }
+
+  .footer .tab {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    min-width: 60px;
+  }
+}
